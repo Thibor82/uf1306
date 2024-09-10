@@ -1,7 +1,7 @@
 // Función para añadir productos al carrito
 function addToCart(productId) {
     console.log('Producto ' + productId + ' añadido al carrito');
-    // Simulación de acción: en un entorno real, se añadiría a un carrito
+    
 }
 
 // Validación y envío del formulario de contacto
