@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda Online</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Bienvenidos a Nuestra Tienda</h2>
+            <p>Los mejores productos al mejor precio.</p>
+        </section>
+        <section id="products">
+            <h2>Productos Destacados</h2>
+            <div class="product" id="product1">
+                <img src="product1.jpg" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p>Descripción detallada del producto 1. Es un producto de alta calidad.</p>
+                <p class="price">Precio: $19.99</p>
+                <button onclick="addToCart('product1')">Añadir al carrito</button>
+            </div>
+            <div class="product" id="product2">
+                <img src="product2.jpg" alt="Producto 2">
+                <h3>Producto 2</h3>
+                <p>Descripción detallada del producto 2. Es muy popular entre nuestros clientes.</p>
+                <p class="price">Precio: $29.99</p>
+                <button onclick="addToCart('product2')">Añadir al carrito</button>
+            </div>
+            <div class="product" id="product3">
+                <img src="product3.jpg" alt="Producto 3">
+                <h3>Producto 3</h3>
+                <p>Descripción detallada del producto 3. Ideal para regalar.</p>
+                <p class="price">Precio: $39.99</p>
+                <button onclick="addToCart('product3')">Añadir al carrito</button>
+            </div>
+        </section>
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una tienda online dedicada a ofrecer los mejores productos para nuestros clientes. Con años de experiencia en el sector, nos enorgullece ofrecer una experiencia de compra única.</p>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form id="contactForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tienda Online. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
